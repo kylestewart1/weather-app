@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 90%;
+    height: 90%;
+    border: 1px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.daily {
+    max-width: 200px;
+    max-height: 400px;
+    background-color: lightskyblue;
+    display: grid;
+    grid-template-rows: 1fr 2fr 3fr 2fr;
+    justify-items: center;
+}
+
+.icon {
+    width: 60px;
+}
