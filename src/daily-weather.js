@@ -25,18 +25,18 @@ export class DailyWeatherDisplay {
         const temperatures = document.createElement("div");
         temperatures.classList.add("temperatures-container");
         const high = document.createElement("p");
-        high.innerText = this.weather.tempmax;
+        high.innerText = `High: ${this.weather.tempmax}`;
         high.classList.add("temperature");
         const low = document.createElement("p");
         low.classList.add("temperature");
-        low.innerText = this.weather.tempmin;
+        low.innerText = `Low: ${this.weather.tempmin}`;
         temperatures.appendChild(high);
         temperatures.appendChild(low);
 
         container.appendChild(date);
         container.appendChild(image);
-        container.appendChild(description);
         container.appendChild(temperatures);
+        container.appendChild(description);
 
         return container;
     }
